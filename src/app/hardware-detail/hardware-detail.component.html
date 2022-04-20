@@ -1,0 +1,7 @@
+<div *ngIf="hardware" >
+  <h2>{{hardware.name}} </h2>
+  <div><span>Naziv: </span>{{hardware.name}}</div>
+  <div><span>Cijena: </span>{{hardware.price}}</div>
+  <app-hardware-rates [price]="hardware.price" ></app-hardware-rates>
+</div>
+

@@ -1,0 +1,11 @@
+<h1>Inventar opreme</h1>
+<ul >
+  <li *ngFor="let hardware of hardwares"
+      (click)="onSelect(hardware)"
+      [class.selected]="hardware === selectedHardware" >
+    <span>Ime: {{hardware.name}}</span> cijena: {{hardware.price}} HRK
+  </li>
+</ul>
+
+<app-hardware-detail [hardware]="selectedHardware" ></app-hardware-detail>
+

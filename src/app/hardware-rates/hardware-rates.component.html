@@ -1,0 +1,14 @@
+<div *ngIf="price">
+  <div *ngIf="price<200">
+    <p>Ovaj hardver se ne može kupiti na rate.</p>
+  </div>
+  <div *ngIf="price>=200 && price<499">
+    <p>Ovaj hardver se može kupiti na 6 rata.</p>
+  </div>
+  <div *ngIf="price>=500 && price<899">
+    <p>Ovaj hardver se može kupiti na 12 rata.</p>
+  </div>
+  <div *ngIf="price>=900">
+    <p>Ovaj hardver se može kupiti na 24 rate.</p>
+  </div>
+</div>
